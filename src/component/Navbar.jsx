@@ -32,12 +32,12 @@ export default function Navbar() {
 						<div className="block">
 							<div className="ml-10 flex items-baseline space-x-4">
 								<Link
-									to="p/"
+									to="/"
 									className={`${theme === 'light' ? `${location.pathname === "/" ? "text-gray-800" : "text-gray-500"}` : `${location.pathname === "/" ? "text-white" : "text-gray-200"}`} hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium`}
 								>
 									Home
 								</Link>
-								<Link to="p/task" className={`${theme === 'light' ? `${location.pathname === "/task" ? "text-gray-800" : "text-gray-500"}` : `${location.pathname === "/task" ? "text-white" : "text-gray-200"}`} hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium `}>
+								<Link to="/task" className={`${theme === 'light' ? `${location.pathname === "/task" ? "text-gray-800" : "text-gray-500"}` : `${location.pathname === "/task" ? "text-white" : "text-gray-200"}`} hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium `}>
 									Tasks
 								</Link>
 							</div>
