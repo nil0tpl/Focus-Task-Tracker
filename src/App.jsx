@@ -14,8 +14,8 @@ function App() {
 					<Navbar />
 					<StateContextProvide>
 						<Routes>
-							<Route path="/" element={<HomeContent />} />
-							<Route path="/task" element={<TaskContent />} />
+							<Route path="p/" element={<HomeContent />} />
+							<Route path="p/task" element={<TaskContent />} />
 						</Routes>
 					</StateContextProvide>
 				</DarkModeProvider>
