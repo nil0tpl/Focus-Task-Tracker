@@ -54,6 +54,7 @@ export default function AddContent() {
                     </div>
                     
                     <div id="taskList" className="space-y-3">
+                        {task.length === 0 && <div className='text-gray-500'>No Task Added</div>}
                         {task.map((element, index) =>{
                             return <TaskItem key={index} index={index} task={element} />
                         })}

@@ -9,7 +9,11 @@ export default function Navbar() {
 	const toggleTheme = () => {
 		if (theme === "light") {
 			setTheme("dark");
+			document.body.classList.add("bg-gray-800", "text-white");
+			document.body.classList.remove("bg-white", "text-gray-800");
 		} else {
+			document.body.classList.add("bg-white", "text-gray-800");
+			document.body.classList.remove("bg-gray-800", "text-white");
 			setTheme("light");
 		}
 	}
@@ -70,7 +74,7 @@ export default function Navbar() {
 								<button className="bg-gray-800 dark:bg-gray-600 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
 									<img
 										className="h-8 w-8 rounded-full"
-										src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+										src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 										alt="Profile"
 									/>
 								</button>

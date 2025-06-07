@@ -11,6 +11,7 @@ export default function TaskItem(props) {
      const [ismodal, setIsmodal] = useState(false);
 
      const selectTaskForTimer = (name) =>{
+		alert('Task "' + name + '" selected for timer.');
           handleState(name);
      }
 
@@ -56,7 +57,7 @@ export default function TaskItem(props) {
                         </span>
 				</div>
 				<div className="flex space-x-2 ml-4">
-					{!props.task.completed && <button onClick={()=> selectTaskForTimer(props.task.name)} className={`p-1 ${theme === 'light' ? 'text-blue-600 hover:text-blue-800' : 'text-blue-400 hover:text-blue-200'}`}>
+					{!props.task.completed && <button onClick={()=> selectTaskForTimer(props.task.name)} className={`p-1 ${theme === 'light' ? 'text-blue-600 hover:text-yellow-500' : 'text-blue-400 hover:text-yellow-500'}`}>
                             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
